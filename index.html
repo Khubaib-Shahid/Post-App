@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="head">
+                <h3>Create Post</h3>
+            </div>
+            <div class="profile">
+                <img id="pimg" src="Images/IMG-20210324-WA0039.jpg" width="60" height="60" alt="dp">
+                <ul>
+                    <li>
+                        <p id="pname">Faizan Sheikh</p>
+                    </li>
+                    <li class="select"><button id="btn" onfocus="foo()">Public <i id="arrow" class="fa-solid fa-caret-down"></i></button>
+                    </li>
+                    <li style="display: none;" class="option" id="option">
+                        <div>
+                            <p onclick="choose(this)">Public</p>
+                            <p onclick="choose(this)">Private</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="write"><textarea id="enter" cols="79" rows="7" placeholder="Write something on your mind..."></textarea>
+            </div>
+            <div class="stickers">
+                <ul>
+                    <li><i style="color: tomato;" class="fa-solid fa-file"></i></li>
+                    <li><i style="color: rgb(76, 76, 238);" class="fa-solid fa-video"></i></li>
+                    <li><i style="color: grey;" class="fa-solid fa-camera"></i></li>
+                    <li><i style="color: rgb(212, 212, 14);" class="fa-solid fa-icons"></i></li>
+                    <li><i class="fa-solid fa-pen-to-square"></i></li>
+                </ul>
+            </div><br>
+            <div class="pbtn"><button onclick="post()">Post</button></div>
+        </div>
+    </div>
+    <div id="post" class="post">
+        <!-- <div class="main">
+            <div class="in1">
+                <img width="60" height="60" src="Images/IMG-20210324-WA0039.jpg" alt="dp">
+                <p>Faizan Sheikh</p>
+            </div>
+            <div class="usert"><p>hello</p></div>
+            <div class="comp">
+                <p onclick="like()"><i id="thumb" class="fa-regular fa-thumbs-up"></i> Like</p>
+                <p onclick="comment(this)"><i class="fa-regular fa-comment"></i> Comment</p>
+                <p><i class="fa-regular fa-share-from-square"></i> Share</p>
+            </div>
+            <div id='forcom' class='forcom'>
+                <img src='Images/IMG-20210324-WA0039.jpg' width='50px' height='50px' alt='dp'>
+                <textarea cols='61' rows='2' placeholder='Enter your comment...'></textarea>
+                <button onclick='postComment()'><i class='fa-solid fa-play'></i></button>
+            </div>  -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
