@@ -1,2 +1,2 @@
 Post App
-https://app.netlify.com/sites/funny-crumble-cfb125/
+https://funny-crumble-cfb125.netlify.app/
